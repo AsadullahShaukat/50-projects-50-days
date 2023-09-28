@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, Arial;
+}
+
+html,
+body {
+    width: 100%;
+    height: calc();
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+body {
+    position: relative;
+    background-color: rgb(51, 51, 51);
+}
+
+header {
+    width: 21rem;
+    height: 21rem;
+    background-color: rgb(255, 121, 121);
+    position: fixed;
+    top: -10.5rem;
+    left: -10.5rem;
+    border-radius: 50%;
+    transition: transform .8s ease-out;
+    z-index: 2;
+}
+
+#menu-icon {
+    height: 3rem;
+    position: absolute;
+    bottom: 4.4rem;
+    right: 5.3rem;
+    cursor: pointer;
+}
+
+#close-icon {
+    height: 4.3rem;
+    position: absolute;
+    bottom: 4.1rem;
+    left: 3.9rem;
+    cursor: pointer;
+}
+
+main {
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+
+    z-index: 1;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 109rem;
+    padding: 10rem 4rem 10rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container h1 {
+    font-size: 3.2rem;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(54, 54, 54);
+}
+
+.container p {
+    font-size: 1.6rem;
+}
+
+.container h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.container img {
+    width: 100%;
+}
+
+#sidebar-menu {
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    left: -17rem;
+    bottom: 6rem;
+    transition: left 0.7s ease-in-out;
+}
+
+#sidebar-menu .item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+#sidebar-menu .item:nth-child(1) {
+    margin-left: 2.7rem;
+}
+
+#sidebar-menu .item:nth-child(2) {
+    margin-left: 4.3rem;
+}
+
+#sidebar-menu .item:nth-child(3) {
+    margin-left: 5.9rem;
+}
+
+#sidebar-menu img {
+    height: 2rem;
+}
+
+#sidebar-menu h3 {
+    font-size: 1.7rem;
+}
